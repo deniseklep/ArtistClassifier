@@ -12,5 +12,7 @@ pip install pandas
 pip install matplotlib
 pip install pillow
 
+Issue with recognizing name Albrecht_Dürer (likely due to encoding used)
+Rename Albrecht_Dürer folder to Albrecht_Durer
 in Albrecht_Dürer folder, run from cmd or powershell:
 get-childitem *.jpg | foreach { rename-item $_ $_.Name.Replace("Albrecht_Dürer", "Albrecht_Durer") }
